@@ -60,7 +60,7 @@ public class CamaraScript : MonoBehaviour
         float scaleY= backcam.videoVerticallyMirrored ? -1f : 1f;
         backgound.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
 
-        float orient= backcam.videoRotationAngle;
+        float orient= -backcam.videoRotationAngle;
         backgound.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
     }
 }
